@@ -1,15 +1,16 @@
 import random
+
 from brain_games.cli import welcome_user
 
 
 def calculadora():
-
 
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
 
     operators = ["+", "-", "*"]
+
     correct_answers = 0
 
     while correct_answers < 3:
@@ -36,7 +37,7 @@ def calculadora():
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_result}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_result}'")
             print(f"Let's try again, {name}!")
             return
 
