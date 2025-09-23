@@ -1,6 +1,7 @@
 import math
 import random
 
+
 from brain_games.cli import welcome_user
 
 
@@ -41,7 +42,7 @@ def MDC(rounds=3):
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    MCD(name)
+    #MCD(name)
 
 
 if __name__ == "__main__":
