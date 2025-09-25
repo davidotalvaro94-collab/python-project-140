@@ -1,6 +1,5 @@
 import random
 
-
 from brain_games.cli import welcome_user
 
 
@@ -56,7 +55,7 @@ def arithmetic_progression_game(rounds=3):
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    #progression(name)
+    # progression(name)
 
 
 if __name__ == "__main__":
