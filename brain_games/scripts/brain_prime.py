@@ -1,3 +1,4 @@
+import random
 
 from brain_games.cli import welcome_user
 
@@ -11,10 +12,8 @@ def es_primo(n):
     return True, None
 
 
-def brain_prime():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+def brain_prime(name):
+
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     while True:  # el juego se reinicia si hay un error
@@ -46,6 +45,7 @@ def brain_prime():
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
+    brain_prime(name)
    
 
 if __name__ == "__main__":

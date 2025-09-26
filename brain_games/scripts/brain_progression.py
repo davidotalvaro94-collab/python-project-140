@@ -3,11 +3,9 @@ import random
 from brain_games.cli import welcome_user
 
 
-def arithmetic_progression_game(rounds=3):
-    name = input("Welcome to the Brain Games!\nMay I have your name? ").strip()
-    if not name:
-        name = "Player"
-    print(f"Hello, {name}!")
+def arithmetic_progression_game(name):
+    
+    rounds=3
     print("What number is missing in the progression?")
 
     for _ in range(rounds):
@@ -55,7 +53,7 @@ def arithmetic_progression_game(rounds=3):
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    # progression(name)
+    arithmetic_progression_game(name)
 
 
 if __name__ == "__main__":

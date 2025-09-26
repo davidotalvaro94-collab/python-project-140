@@ -3,10 +3,7 @@ import random
 from brain_games.cli import welcome_user
 
 
-def calculadora():
-
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+def calculadora(name):
 
     operators = ["+", "-", "*"]
 

@@ -4,13 +4,9 @@ import random
 from brain_games.cli import welcome_user
 
 
-def MDC(rounds=3):
-
-    name = input("Welcome to the Brain Games!\nMay I have your name? ").strip()
-
-    if not name:
-        name = "Player"
-    print(f"Hello, {name}!")
+def MDC(name):
+    
+    rounds=3
     print("Find the greatest common divisor of given numbers.")
 
     for _ in range(rounds):
