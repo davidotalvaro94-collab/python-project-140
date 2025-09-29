@@ -5,7 +5,7 @@ from brain_games.cli import welcome_user
 
 def arithmetic_progression_game(name):
     
-    rounds=3
+    rounds = 3
     print("What number is missing in the progression?")
 
     for _ in range(rounds):
