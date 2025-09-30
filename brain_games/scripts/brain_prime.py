@@ -29,9 +29,13 @@ def brain_prime(name):
                 print("Correct!")
                 aciertos += 1
             else:
-                print(f"'{respuesta}' is wrong answer ;(. Correct answer was '{primo}'.")
+                if primo == True: 
+                    rta="yes"
+                if primo == False: 
+                    rta="no"
+                print(f"'{respuesta}' is wrong answer ;(. Correct answer was '{rta}'.")
                 print(f"Let's try again, {name}!")
-                break  
+                exit() 
 
         if aciertos == 3:
             print(f"Congratulations, {name}!")
