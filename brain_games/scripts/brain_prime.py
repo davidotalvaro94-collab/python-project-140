@@ -29,7 +29,7 @@ def brain_prime(name):
                 print("Correct!")
                 aciertos += 1
             else:
-                print(f"'{respuesta}' is wrong answer ;(. Let's try again, {name}!")
+                print(f"'{respuesta}' is wrong answer ;(. Correct answer was '{primo}'.")
                 print(f"Let's try again, {name}!")
                 break  
 
