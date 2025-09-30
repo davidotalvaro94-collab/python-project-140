@@ -23,7 +23,8 @@ def calculadora(name):
         print(f"Question: {expression}")
         answer = input("Your answer: ")
 
-        if not answer.isdigit() and not (answer.startswith('-') and answer[1:].isdigit()):
+        if (not answer.isdigit() and 
+            not (answer.startswith('-') and answer[1:].isdigit())):
             print(f"'{answer}' is not a valid number.) Let's try again, {name}!")
             return
 
