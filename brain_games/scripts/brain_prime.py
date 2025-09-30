@@ -25,17 +25,17 @@ def brain_prime(name):
 
             primo, divisor = es_primo(numero)
 
-            if ((primo and respuesta == "yes") or 
+            if ((primo and respuesta == "yes") or
                 (not primo and respuesta == "no")):
                 print("Correct!")
                 aciertos += 1
             else:
                 if (primo == True):
-                    rta="yes"
+                    rta = "yes"
 
                 if (primo == False):
-                    rta="no"
-                    
+                    rta = "no"
+
                 print((
                     f"'{respuesta}' is wrong answer ;(. "
                     f"Correct answer was '{rta}'."

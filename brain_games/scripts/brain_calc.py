@@ -25,7 +25,11 @@ def calculadora(name):
 
         if (not answer.isdigit() and 
             not (answer.startswith('-') and answer[1:].isdigit())):
-            print(f"'{answer}' is not a valid number.) Let's try again, {name}!")
+            print((
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_result}'."
+            ))
+            print(f"Let's try again, {name}!")
             return
 
         answer = int(answer)
