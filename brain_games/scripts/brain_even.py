@@ -19,7 +19,7 @@ def par_o_impar(name):
                 n += 1
             else:
                 print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {name}")
+                print(f"Let's try again, {name}!")
                 exit()
         else:
             if answer == "no":
