@@ -4,21 +4,18 @@ from brain_games.cli import welcome_user
 
 
 def arithmetic_progression_game(name):
-    
+
     rounds = 3
     print("What number is missing in the progression?")
 
     for _ in range(rounds):
-        # Generar una progresión aritmética
-        length = random.randint(5, 10)  # al menos 5, hasta 10
+        length = random.randint(5, 10)  
         start = random.randint(1, 20)
-        diff = random.randint(1, 9)  # salto
+        diff = random.randint(1, 9)  
 
-        # Construir la progresión
         prog = [start + i * diff for i in range(length)]
         missing_index = random.randint(0, length - 1)
 
-        # Reemplazar el elemento faltante por ".." en la salida
         display_prog = []
         for i, v in enumerate(prog):
             if i == missing_index:
@@ -29,10 +26,8 @@ def arithmetic_progression_game(name):
         print("Question:", " ".join(display_prog))
         answer = input("Your answer: ").strip()
 
-        # Calcular la respuesta correcta
         correct = prog[missing_index]
 
-        # Intento del usuario
         try:
             user_ans = int(answer)
         except ValueError:

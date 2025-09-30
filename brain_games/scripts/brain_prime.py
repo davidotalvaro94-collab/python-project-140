@@ -8,7 +8,7 @@ def es_primo(n):
         return False, None
     for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
-            return False, i  # devolvemos el divisor encontrado
+            return False, i  
     return True, None
 
 
@@ -16,7 +16,7 @@ def brain_prime(name):
 
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-    while True:  # el juego se reinicia si hay un error
+    while True:  
         aciertos = 0
         while aciertos < 3:
             numero = random.randint(1, 100)
@@ -30,16 +30,12 @@ def brain_prime(name):
                 aciertos += 1
             else:
                 print(f"'{respuesta}' is wrong answer ;(. Let's try again, {name}!")
-                if not primo:
-                    if divisor:
-                        print(f"Explanation: {numero} is not prime because it is divisible by {divisor}.")
-                    else:
-                        print(f"Explanation: {numero} is not prime because numbers less than 2 are not prime.")
-                break  # rompe el ciclo y reinicia el juego
+                print(f"Let's try again, {name}!")
+                break  
 
         if aciertos == 3:
             print(f"Congratulations, {name}!")
-            break  # finaliza el juego al ganar
+            break  
 
 
 def main():

@@ -28,10 +28,10 @@ def par_o_impar(name):
                 n += 1
             else:
                 print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}")
+                print(f"Let's try again, {name}!")
                 exit()
 
-    print("Congratulations," + name + "!")
+    print("Congratulations, " + name + "!")
 
 
 def main():
