@@ -35,7 +35,6 @@ def par_o_impar(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     par_o_impar(name)
 

@@ -49,7 +49,6 @@ def calculadora(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     calculadora(name)
 

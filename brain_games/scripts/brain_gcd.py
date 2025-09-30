@@ -38,7 +38,6 @@ def MDC(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     MDC(name)
 

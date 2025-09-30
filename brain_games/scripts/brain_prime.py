@@ -30,10 +30,10 @@ def brain_prime(name):
                 print("Correct!")
                 aciertos += 1
             else:
-                if (primo == True):
+                if (primo):
                     rta = "yes"
 
-                if (primo == False):
+                if (not primo):
                     rta = "no"
 
                 print((
@@ -49,7 +49,6 @@ def brain_prime(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     brain_prime(name)
    

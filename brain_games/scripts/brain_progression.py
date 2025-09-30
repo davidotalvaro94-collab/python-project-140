@@ -49,7 +49,6 @@ def arithmetic_progression_game(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     arithmetic_progression_game(name)
 
