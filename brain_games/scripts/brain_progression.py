@@ -39,6 +39,10 @@ def arithmetic_progression_game(name):
             print("Question:", " ".join(display_prog))
             print(f"Your answer: {answer}")
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'.")
+            print((
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct}'."
+            ))
             print(f"Let's try again, {name}!")
             return
 

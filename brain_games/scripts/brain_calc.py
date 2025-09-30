@@ -24,7 +24,7 @@ def calculadora(name):
         answer = input("Your answer: ")
 
         if not answer.isdigit() and not (answer.startswith('-') and answer[1:].isdigit()):
-            print(f"'{answer}' is not a valid number. Let's try again, {name}!")
+            print(f"'{answer}' is not a valid number.) Let's try again, {name}!")
             return
 
         answer = int(answer)
@@ -33,7 +33,10 @@ def calculadora(name):
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_result}'")
+            print((
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_result}'."
+            ))
             print(f"Let's try again, {name}!")
             return
 

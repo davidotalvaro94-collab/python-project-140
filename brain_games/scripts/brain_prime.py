@@ -33,7 +33,10 @@ def brain_prime(name):
                     rta="yes"
                 if primo == False: 
                     rta="no"
-                print(f"'{respuesta}' is wrong answer ;(. Correct answer was '{rta}'.")
+                print((
+                    f"'{respuesta}' is wrong answer ;(. "
+                    f"Correct answer was '{rta}'."
+                ))
                 print(f"Let's try again, {name}!")
                 exit() 
 

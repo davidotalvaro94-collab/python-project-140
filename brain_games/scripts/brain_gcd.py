@@ -5,7 +5,7 @@ from brain_games.cli import welcome_user
 
 
 def MDC(name):
-    
+
     rounds = 3
     print("Find the greatest common divisor of given numbers.")
 
@@ -27,7 +27,10 @@ def MDC(name):
         else:
             print(f"Question: {a} {b}")
             print(f"Your answer: {answer}")
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'.")
+            print((
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct}'."
+            ))
             print(f"Let's try again, {name}!")
             return
 
