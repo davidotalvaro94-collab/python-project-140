@@ -1,5 +1,5 @@
 install:
-    uv sync
+    python-m uv sync
 
 build:
     uv build
