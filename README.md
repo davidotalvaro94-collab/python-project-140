@@ -40,24 +40,26 @@ Requisitos minimos de este son los requisitos de Python 3.13.7 para windows
 Instrucciones claras de instalación y ejecución.
 
     - 1. git clone https://github.com/davidotalvaro94-collab/python-project-140.git
-    - 2. python -m venv .venv
-    - 3. .venv\Scripts\activate
-    - 4. pip install 
-    - 5. uv sync
-    - 6. ejecutar juego:
+    - 1.1 acceder al repositorio
+    - 2. python3 -m venv venv
+    - 3. source venv/bin/activate
+    - 4. python -m pip install -e .
+    - 5. ejecutar juego:
         - brain-calc
         - brain-even
         - brain-gcd
         - brain-prime
         - brain-progression
 
+    asciinema rec demoeven.cast
+    asciinema upload demo.cast
 Asciinema grabaciones.
 
-    - brain-calc:
-    - brain-even: 
-    - brain-gcd:
-    - brain-prime:  
-    - brain-progression: 
+    - brain-calc: https://asciinema.org/a/Z90UXNjW8PgbZf2xICcJxjXjC
+    - brain-even: https://asciinema.org/a/c7QGlASPz2JgWXMumqlgqHpwJ
+    - brain-gcd:  https://asciinema.org/a/7DLnUYI89u5GbJpiP8Yp7ntY9
+    - brain-prime:  https://asciinema.org/a/3ZMCfQ7Y4JSbdScZMdzef810c
+    - brain-progression:  https://asciinema.org/a/Bj30W6t76Rwmff3bjBNG7ZAiM
 
 
 
